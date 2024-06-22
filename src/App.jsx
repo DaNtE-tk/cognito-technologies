@@ -4,8 +4,8 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import './App.css'
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Logo from '../static/CTlogo.png'
-import SwirlArrowDown from '../static/swirl_arrow_down.png'
+import Logo from './static/CTlogo.png'
+import SwirlArrowDown from './static/swirl_arrow_down.png'
 
 function App() {
   const styles = {
