@@ -2,9 +2,6 @@ import PageTitle from "../Components/PageTitle";
 import Polaroid from "../Components/Polaroid";
 import Section from "../Components/Section";
 import Item from "../Components/Item";
-import MemberCard from "../Components/MemberCard";
-import HrScroller from "../Components/HrScroller";
-import { Button } from "react-bootstrap";
 
 const WhoWeAre = () => {
     return (<>
@@ -18,7 +15,9 @@ const WhoWeAre = () => {
                 </div>
                 <div className="text-content w-50 flex-shrink-1">
                     <p style={{ fontSize: "1.5vw" }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus. Cras accumsan viverra arcu quis posuere. Vestibulum ut ligula nec eros cursus euismod viverra a enim. Phasellus cursus, elit id elementum faucibus, justo felis euismod orci, sit amet aliquam quam augue at quam. Nulla vitae ante venenatis, pellentesque leo vitae, pulvinar lorem. Suspendisse sit amet sem et ligula gravida fermentum nec in nibh. Praesent sed ligula erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus. Cras accumsan viverra.
+                    Our Story
+
+Cognito Technologies emerged from a vision to transform the intersection of technology and society. Founded by two seasoned IT professionals, we set out to create solutions that genuinely enhance lives. This drive led to innovations like MindEase for mental health support and MindCare for advanced healthcare connectivity. Our journey is marked by ethical innovation and a keen understanding of evolving digital needs. By harnessing AI and other cutting-edge technologies, we're forging meaningful connections and improving well-being. From revolutionary social media tools to groundbreaking socio-technical approaches, we're guided by a singular belief: thoughtfully applied technology can create a healthier, more connected world.
                     </p>
                 </div>
             </div>
@@ -43,35 +42,10 @@ const WhoWeAre = () => {
                     img={"/WhoWeAre/values.png"}
                     alt={"values"}
                     header={"Values"}
-                    desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
+                    desc={"We champion innovation, empowerment, and integrity in our pursuit of human-centric technology. Committed to accessibility and well-being, we create sustainable solutions that foster connectivity and seamlessly enhance daily life. Our adaptable, collaborative approach drives us to responsibly advance technology for societal betterment."}
                     hdsize={"24px"}
                 />
             </div>
-        </Section>
-        <Section ID={"team-members"} header={"Meet the Team"}>
-            <HrScroller>
-                <MemberCard img={"/WhoWeAre/founder1.jpg"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
-                    contact={[
-                        { "iconClass": "fa-brands fa-linkedin", "link": "/error" },
-                        { "iconClass": "fa-brands fa-twitter", "link": "/error" },
-                    ]}/>
-                <MemberCard img={"/WhoWeAre/founder1.jpg"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
-                    contact={[
-                        { "iconClass": "fa-brands fa-linkedin", "link": "/error" },
-                        { "iconClass": "fa-brands fa-twitter", "link": "/error" },
-                    ]}/>
-                <MemberCard img={"/WhoWeAre/founder1.jpg"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
-                    contact={[
-                        { "iconClass": "fa-brands fa-linkedin", "link": "/error" },
-                        { "iconClass": "fa-brands fa-twitter", "link": "/error" },
-                    ]}/>
-                <MemberCard img={"/WhoWeAre/founder1.jpg"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
-                    contact={[
-                        { "iconClass": "fa-brands fa-linkedin", "link": "/error" },
-                        { "iconClass": "fa-brands fa-twitter", "link": "/error" },
-                    ]}/>
-            </HrScroller>
-            <div className="w-100 d-flex"><a className="mx-auto" href="/error"><Button variant="dark">Join Our Team <i className="fa-solid fa-users-line"></i></Button></a></div>
         </Section>
     </>);
 }
