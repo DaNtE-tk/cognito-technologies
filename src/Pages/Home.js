@@ -53,27 +53,27 @@ const Home = () => {
                         alt={"Software"}
                         header={"Custom Software Development"}
                         icon={"fa-solid fa-grip-vertical"}
-                        desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."} />
+                        desc={"We create custom software tailored to your business needs. Our expert developers build robust, scalable solutions that enhance user experience and operational efficiency."} />
                     <Card
                         img={"/Home/ai.png"}
                         alt={"AI"}
                         icon={"fa-solid fa-brain"}
                         header={"AI and Machine Learning Solutions"}
-                        desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
+                        desc={"Supercharge your business with our AI solutions. We integrate machine learning to automate processes, predict trends, optimize decisions, giving you a competitive edge."}
                     />
                     <Card
                         img={"/Home/iot.png"}
                         alt={"IOT"}
                         icon={"fa-solid fa-wifi"}
                         header={"IoT Integration"}
-                        desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
+                        desc={"Our IoT services connect your devices, enabling real-time data collection and automation. Transform your business with smart systems for enhanced efficiency and performance."}
                     />
                     <Card
                         img={"/Home/cloud.png"}
                         alt={"ai"}
                         icon={"fa-solid fa-cloud-arrow-up"}
                         header={"Cloud Services"}
-                        desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}
+                        desc={"Elevate your business with our cloud services. We offer scalable solutions for migration, management, and optimization, ensuring secure and efficient operations."}
                     />
                 </HrScroller>
                 <div className="w-100 d-flex"><a className="mx-auto" href="/whatwedo"><Button variant="dark">Explore Our Services <i className="fa-solid fa-angle-right"></i></Button></a></div>
@@ -83,18 +83,18 @@ const Home = () => {
                     <Item
                         img={"/Home/s-t-i.png"}
                         alt={"ai"}
-                        header={"Socio-technial Product Name"}
-                        desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."} />
+                        header={"MindCare"}
+                        desc={" IoT-powered dementia care system. Monitors patients, detects falls, and alerts caregivers instantly. Provides 24/7 protection, enhancing patient safety and caregiver peace of mind through advanced technology."} />
                     <Item
                         img={"/Home/s-t-i.png"}
                         alt={"ai"}
-                        header={"Socio-technial Product Name"}
-                        desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."} />
+                        header={"MindEase"}
+                        desc={"An AI-powered mental health platform offering personalized therapy, progress tracking, and therapist integration. Supports self-care and professional guidance with evidence-based tools in a secure, user-friendly environment."} />
                     <Item
                         img={"/Home/s-t-i.png"}
                         alt={"ai"}
-                        header={"Socio-technial Product Name"}
-                        desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."} />
+                        header={"SMAP"}
+                        desc={" Automated social media management tool. Schedules posts, tracks engagement, and optimizes content across platforms. Helps businesses and influencers save time, grow audiences, and maintain consistent online presence efficiently."} />
                 </div>
                 <div className="w-100 d-flex"><a className="mx-auto" href="/products"><Button variant="dark">View All Products <i className="fa-solid fa-angle-right"></i></Button></a></div>
             </Section>
