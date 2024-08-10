@@ -1,48 +1,18 @@
 import PageTitle from "../Components/PageTitle";
-
 import Section from "../Components/Section";
 import Description from "../Components/Description";
-import HrScroller from "../Components/HrScroller";
-import Testimonial from "../Components/Testimonial";
-import { Button } from "react-bootstrap";
-import Roles from "../Components/Roles";
+
 const Career = () => {
     return ( <><PageTitle title={"Career"}/>
     <Section ID={"career"} header={"Why Work With Us"}>
             <Description img={"/Career/culture.png"} lists={[
-                { "icon": "fa-solid fa-clipboard", "header": "Our Company Culture", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus." },
-                { "icon": "fa-solid fa-scale-unbalanced-flip", "header": "Our Values", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus." },
-                { "icon": "fa-solid fa-hands-holding", "header": "Benefits of Working With Us", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus." },
+                { "icon": "fa-solid fa-clipboard", "header": "Our Company Culture", "description": "At Cognito Technologies, we foster innovation through collaboration and continuous learning. Our customer-focused approach drives us to create impactful solutions, guided by ethical responsibility. We embrace agility, diversity, and work-life balance, empowering our team to excel. Sustainability and open communication are key to our culture, as we strive to advance technology responsibly while nurturing creativity and personal growth." },
+                { "icon": "fa-solid fa-scale-unbalanced-flip", "header": "Our Values", "description": "We innovate to empower people through ethical, human-centered technology. Our focus is on creating accessible, sustainable solutions that enhance connectivity and daily life. We collaborate and adapt to responsibly advance technology, aiming to improve society and individual well-being." },
+                { "icon": "fa-solid fa-hands-holding", "header": "Benefits of Working With Us", "description": "At Cognito Technologies, you'll innovate with purpose in a collaborative startup environment. Create impactful AI and IoMT solutions while enjoying an ethical, diverse workplace that values learning, work-life balance, and your unique contributions to technology that improves lives." },
                 ]} />
-        </Section>
-        <Section ID={"career"} header={"Opportunities For You"}>
-       <div className="w-100 d-flex flex-wrap py-3 justify-content-center gap-3">
-       <Roles header="Job Role" description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus."} link1={"/error"} link2={"/error"} img={"/Career/Image.png"}/>
-       <Roles header="Job Role" description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus."} link1={"/error"} link2={"/error"} img={"/Career/Image.png"}/>
-       <Roles header="Job Role" description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero. Nam ante velit, pulvinar non sagittis nec, varius ultricies lacus."} link1={"/error"} link2={"/error"} img={"/Career/Image.png"}/>
-          
-       </div>
-
-        </Section>
-        <Section ID={"employees"} header={"Employee Testimonials"}>
-            <HrScroller>
-                <Testimonial img={"/Career/profile.png"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}/>
-                <Testimonial img={"/Career/profile.png"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}/>
-                <Testimonial img={"/Career/profile.png"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}/>
-                <Testimonial img={"/Career/profile.png"} name={"Mr. A"} position={"UI/UX Developer"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum, ex a semper auctor, elit tortor consequat lectus, non rhoncus mauris purus eu libero."}/>
-
-                    
-                
-            </HrScroller>
-            <div className="w-100 d-flex"><a className="mx-auto" href="/error"><Button variant="dark">Apply Now <i className="fa-solid fa-user-check"></i></Button></a></div>
-        </Section>
+        </Section>      
         </> 
         
     );
 }
- 
-
-
-
-
 export default Career;
