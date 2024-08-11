@@ -16,7 +16,8 @@ const Home = () => {
                             style={{
                                 fontSize: "5vw",
                                 lineHeight: "1.3",
-                                fontFamily: "Sansation"
+                                fontFamily: "Sansation",
+                                color : "var(--primary-color) !important"
                             }}
                         >Innovating<br />
                             Tomorrow, Today

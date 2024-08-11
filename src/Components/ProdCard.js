@@ -28,7 +28,7 @@ const ProdCard = ({ header, description, link, img }) => {
             <div className="image-container d-flex justify-content-center align-items-center" style={{
                 width: "40%",
             }}>
-                <img className="w-100" src={img} alt="product"/>
+                <img className="w-100" src={img} alt="product" />
             </div>
         </div>
     );

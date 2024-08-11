@@ -30,6 +30,11 @@ const ProductDetails = () => {
     }}>
         <Section header={current_product.name} ID={"single-product-details"}>
             <div className="px-5">
+                <img src={current_product.image} alt="product" style={{
+                    float : "right",
+                    maxWidth: "30vw",
+                    minWidth : "200px"
+                }}/>
                 {current_product.genoverview.map(element => <p>{element}</p>)}
                 {current_product.techoverview.map(element => <p>{element}</p>)}
             </div>
