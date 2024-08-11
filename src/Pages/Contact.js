@@ -40,12 +40,12 @@ const Contact = () => {
           </Form>
         </Col>
         <Col md={6}>
-          <MapContainer center={[40.7128, -74.0060]} zoom={13} scrollWheelZoom={false} style={{ height: "400px", width: "100%" }}>
+          <MapContainer center={[22.632759765105835, 88.45338412119894]} zoom={13} scrollWheelZoom={false} style={{ height: "400px", width: "100%" }}>
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
-            <Marker position={[40.7128, -74.0060]}>
+            <Marker position={[22.632759765105835, 88.45338412119894]}>
               <Popup>
                 Company Address: lorem ipsum dolor, address line abc-road, atown, kolkata-75125221
               </Popup>

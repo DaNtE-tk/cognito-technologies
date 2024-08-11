@@ -2,10 +2,11 @@ import { Button } from "react-bootstrap";
 
 const ProdCard = ({ header, description, link, img }) => {
     return (
-        <div className="prod-card d-flex px-3 py-3 justify-content-between">
+        <div className="prod-card d-flex px-3 py-3 justify-content-between" style={{
+            maxWidth : "50vw"
+        }}>
             <div className="text-container d-flex flex-column justify-content-around flex-grow-1" style={{
                 width: "59%",
-                maxWidth: "50vw !important", 
             }}>
                 <div>
                     <i style={{ fontSize: "1.5vw" }} className="fa-solid fa-grip-vertical"></i>
@@ -32,5 +33,5 @@ const ProdCard = ({ header, description, link, img }) => {
         </div>
     );
 }
-
+ 
 export default ProdCard;
