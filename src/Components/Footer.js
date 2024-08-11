@@ -26,8 +26,6 @@ const Footer = () => {
                 <address>
                     <ul className="p-0">
                         <li>Lorem ipsum dolor sit amet, consectetur.</li>
-                        <li><i className="fa-solid fa-at"></i> Email : example@example.com</li>
-                        <li><i className="fa-solid fa-phone"></i> Phone No. : xx-xxxx-xxxx</li>
                     </ul>
                 </address>
             </div>

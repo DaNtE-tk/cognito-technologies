@@ -2,7 +2,9 @@ const Item = ({ img, alt, header, desc, hdsize }) => {
     return (
         <div className="item d-flex flex-column align-items-center gap-4 m-5">
             <div className="image-container">
-                <img src={img} alt={alt} />
+                <img src={img} alt={alt} style={{
+                    maxWidth : "100px"
+                }}/>
             </div>
             <div className="text-content">
                 <h2 style={{

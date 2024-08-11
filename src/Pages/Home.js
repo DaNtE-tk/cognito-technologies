@@ -82,18 +82,18 @@ const Home = () => {
             <Section header={"Featured Products"} ID={"products"}>
                 <div className="d-flex justify-content-center w-100 flex-wrap">
                     <Item
-                        img={"/Home/s-t-i.png"}
-                        alt={"ai"}
+                        img={"/Products/mindcare.jpg"}
+                        alt={"iot"}
                         header={"MindCare"}
                         desc={" IoT-powered dementia care system. Monitors patients, detects falls, and alerts caregivers instantly. Provides 24/7 protection, enhancing patient safety and caregiver peace of mind through advanced technology."} />
                     <Item
-                        img={"/Home/s-t-i.png"}
+                        img={"/Products/mindease.jpg"}
                         alt={"ai"}
                         header={"MindEase"}
                         desc={"An AI-powered mental health platform offering personalized therapy, progress tracking, and therapist integration. Supports self-care and professional guidance with evidence-based tools in a secure, user-friendly environment."} />
                     <Item
-                        img={"/Home/s-t-i.png"}
-                        alt={"ai"}
+                        img={"/Products/smap.jpg"}
+                        alt={"software"}
                         header={"SMAP"}
                         desc={" Automated social media management tool. Schedules posts, tracks engagement, and optimizes content across platforms. Helps businesses and influencers save time, grow audiences, and maintain consistent online presence efficiently."} />
                 </div>
