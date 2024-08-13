@@ -1,42 +1,252 @@
-.App {
+@font-face {
+  font-family: "Sansita";
+  src: url("https://db.onlinewebfonts.com/t/6ee9967c7338ffe1d14984038de23d9b.eot");
+  src: url("https://db.onlinewebfonts.com/t/6ee9967c7338ffe1d14984038de23d9b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6ee9967c7338ffe1d14984038de23d9b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6ee9967c7338ffe1d14984038de23d9b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6ee9967c7338ffe1d14984038de23d9b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6ee9967c7338ffe1d14984038de23d9b.svg#Sansita")format("svg");
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("https://db.onlinewebfonts.com/t/a95ede42168248621cd7c0bcc5e9dd6c.eot");
+  src: url("https://db.onlinewebfonts.com/t/a95ede42168248621cd7c0bcc5e9dd6c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a95ede42168248621cd7c0bcc5e9dd6c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a95ede42168248621cd7c0bcc5e9dd6c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a95ede42168248621cd7c0bcc5e9dd6c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a95ede42168248621cd7c0bcc5e9dd6c.svg#Sansation Bold")format("svg");
+}
+
+:root {
+  --primary-color: #0D2D4D;
+  --secondary-color: #13BBA4;
+  --passive-color: #FFF;
+  --primary-optional-color: #44149E;
+}
+
+html,
+body,
+:root {
+  height: 100svh;
+  margin: 0;
+  padding: 0;
+  font-family: "Sansita" !important;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
   text-align: center;
+  font-family: "Sansation" !important;
+  color: var(--primary-color) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social-media h5 {
+  text-align: center !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  border-top: solid 0.5px var(--primary-color) !important;
+  opacity: 1 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-dark {
+  background-color: var(--primary-color) !important;
+  font-family: "Sansation" !important;
+  padding-top: 10px !important;
+  height: 50px !important;
+}
+
+
+
+button.rounded {
+  border-radius: 50px !important;
+  font-size: 14px !important;
+}
+
+
+
+header {
+  height: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a:link,
+nav a {
+  text-decoration: none;
+  color: var(--primary-color) !important;
+}
+
+nav li {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
+}
+
+a.active {
+  color: #11fe9f !important;
+}
+
+a.active>button {
+  background-color: var(--primary-optional-color) !important;
+}
+
+footer,
+footer a:link,
+footer a {
+  background-color: var(--primary-color);
+  color: var(--passive-color) !important;
+  text-decoration: none;
+  font-family: "Sansation" !important;
+}
+
+.social-media ul,
+.contact-address ul {
+  list-style-type: none;
+  color: #ffffffb9 !important;
+}
+
+.image-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.scroll {
+  overflow-y: hidden;
+  height: 402px;
+  padding: 10px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.scroll::-webkit-scrollbar {
+  width: 0px;
+}
+
+.banner button {
+  font-size: larger !important;
+}
+
+.card {
+  font-size: 16px !important;
+  border-radius: 20px !important;
+  height: 359px !important;
+  width: 331px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px grey;
+}
+
+.card .text-content {
+  padding: 10px 2px 2px 10px;
+  border-top-right-radius: 50px;
+  width: 100%;
+  height: 131px;
+  background-color: var(--passive-color);
+}
+
+.item {
+  width: 390px;
+}
+
+.eclipse {
+  height: 145%;
+  width: 70em;
+  background-color: var(--primary-optional-color);
+  clip-path: ellipse(50% 50%);
+  rotate: 16.58deg;
+  top: 0;
+  left: -100px;
+  z-index: -1;
+}
+
+#newsletter .form {
+  text-shadow:
+    -1px -1px 0 var(--passive-color),
+    1px -1px 0 var(--passive-color),
+    -1px 1px 0 var(--passive-color),
+    1px 1px 0 var(--passive-color);
+  letter-spacing: 1.6px;
+}
+
+.polaroid-absolute {
+  width: 12.2445vw;
+  height: 15vw;
+  background-color: var(--passive-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1vw;
+}
+
+.polaroid-absolute:nth-of-type(1) {
+  z-index: 1;
+  rotate: -5.94deg;
+  left: 15%;
+  top: 0;
+}
+
+.polaroid-absolute:nth-of-type(2) {
+  rotate: 9.33deg;
+  right: 15%;
+  top: 15%;
+}
+
+.polaroid-relative {
+  width: 200.97px;
+  height: 253.07px;
+  background-color: var(--passive-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  rotate: -5.94deg;
+}
+
+.member-card{
+  min-width: 524.07px;
+  padding: 28px 13px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.test-card{ 
+  min-width: 396.6px;
+  padding: 28px 13px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.service-content {
+  box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 4px 10px 0;
+  height: auto;
+
+
+}
+
+.prod-card {
+  width: 45%;
+  border-radius: 20px; 
+  box-shadow : 0 4px 4px gray;
+  min-width : 360px !important;
+  flex-grow: 1 !important;
+}
+
+.roles-card {
+  width: 45%;
+  border-radius: 20px; 
+  box-shadow : 0 4px 4px gray;
+  min-width : 360px !important;
+
+}
+
+@media only screen and (width <= 963.44px) {
+  .prod-card h2, .prod-card i {
+    font-size: 14px !important;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .prod-card p {
+    font-size: 10px !important;
   }
-}
 
-button {
-  font-size: calc(10px + 2vmin);
 }
