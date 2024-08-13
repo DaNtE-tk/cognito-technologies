@@ -54,7 +54,7 @@ jobs:
         with:
           app-name: 'cognitotechnologies'
           slot-name: 'Production'
-          package: './dist'
+          package: './build'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E8D0FCB86D24B1FB7F5BF6458E383BF }}
 
 
