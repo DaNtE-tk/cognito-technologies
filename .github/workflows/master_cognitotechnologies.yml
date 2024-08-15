@@ -1,63 +1,65 @@
 # # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - cognitotechnologies
+# name: Build and deploy Node.js app to Azure Web App - cognitotechnologies
 
-on:
-  push:
-    branches:
-      - master
-  workflow_dispatch:
+# on:
+#   push:
+#     branches:
+#       - master
+#   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: windows-latest
+# jobs:
+#   build:
+#     runs-on: windows-latest
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v2
 
-      - name: Install Dependencies
-        run: npm install
-        env:
-          CI: false
+#       - name: Install Dependencies
+#         run: npm install
+#         env:
+#           CI: false
 
-      - name: Build Application
-        run: npm run build
-        env:
-            CI: false
+#       - name: Build Application
+#         run: npm run build
+#         env:
+#             CI: false
 
-      - name: Archive build artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: 'build-artifacts'
-          path: "./build"
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+#       - name: Archive build artifacts
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: 'build-artifacts'
+#           path: "./build"
+#   deploy:
+#     runs-on: ubuntu-latest
+#     needs: build
+#     environment:
+#       name: 'Production'
+#       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
     
-      - name: Download build artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: build-artifacts
-          path: "./build"
+#       - name: Download build artifacts
+#         uses: actions/download-artifact@v2
+#         with:
+#           name: build-artifacts
+#           path: "./build"
     
-      - name: Deploy to Azure App Service 1
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'cognitotechnologies'
-          slot-name: 'Production'
-          package: './build'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E8D0FCB86D24B1FB7F5BF6458E383BF }}
+#       - name: Deploy to Azure App Service 1
+#         uses: azure/webapps-deploy@v2
+#         with:
+#           app-name: 'cognitotechnologies'
+#           slot-name: 'Production'
+#           package: './build'
+#           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E8D0FCB86D24B1FB7F5BF6458E383BF }}
 
-
+          
+          
+# OLD------------------------
   #   steps:
   #     - uses: actions/checkout@v4
 
