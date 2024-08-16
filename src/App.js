@@ -19,19 +19,19 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <main>
-          <Routes>
-            <Route path="/" element={<Layout />} >
-              <Route index path="/" element={<Navigate to="/home" />} />
-              <Route path="home" element={<Home />} />
-              <Route path="intro" element={<WhoWeAre />} />
-              <Route path="whatwedo" element={<WhatWeDo />} />
-              <Route path="products" element={<Product />} />
-              <Route path="career" element={<Career />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path='product/:productId' element={<ProductDetails />} />
+          <Layout>
+            <Routes>
+              <Route index path='/' element={<Navigate to={"/home"}/>}/>
+              <Route path="/home" element={<Home />} />
+              <Route path="/intro" element={<WhoWeAre />} />
+              <Route path="/whatwedo" element={<WhatWeDo />} />
+              <Route path="/products" element={<Product />} />
+              <Route path="/career" element={<Career />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path='/product/:productId' element={<ProductDetails />} />
               <Route path="*" element={<PageNotFound />} />
-            </Route>
-          </Routes>
+            </Routes>
+          </Layout>
         </main>
       </BrowserRouter>
     </div>
