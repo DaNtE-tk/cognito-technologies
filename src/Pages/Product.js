@@ -24,7 +24,6 @@ const Product = () => {
                 link={"/product/U01BUA=="}
                 />
             </div>
-            <div className="w-100 d-flex py-5"><a className="mx-auto" href="/contact"><Button variant="dark">Request a Demo{" "}<i className="fa-solid fa-gears"></i></Button></a></div>
         </Section>
     </> );
 }
