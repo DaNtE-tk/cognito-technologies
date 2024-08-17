@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <header className="d-flex px-3">
             <div className="logo h-100">
-                <img className="h-100 object-fit-contain" src="/logo.png" alt="logo" />
+                <Link to={"/home"}><img className="h-100 object-fit-contain" src="/logo.png" alt="logo" /></Link>
             </div>
             <div className="navbar w-100 d-flex justify-content-end align-items-center flex-grow-1 flex-shrink-1">
                 <nav className="d-flex align-items-center">

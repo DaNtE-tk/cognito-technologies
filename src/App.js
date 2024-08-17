@@ -9,9 +9,10 @@ import Career from './Pages/Career';
 import Product from './Pages/Product';
 import Layout from './Components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import 'leaflet/dist/leaflet.css';
 import ProductDetails from './Pages/ProductDetails';
+import Policy from './Pages/Policy.js';
+import Terms from './Pages/Terms.js';
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
               <Route path="/products" element={<Product />} />
               <Route path="/career" element={<Career />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path='/policy' element={<Policy />}/>
+              <Route path='/terms' element = {<Terms />} />
               <Route path='/product/:productId' element={<ProductDetails />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
