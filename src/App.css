@@ -90,7 +90,7 @@ nav li {
 }
 
 a.active {
-  color: #11fe9f !important;
+  color: blue !important;
 }
 
 a.active>button {
@@ -156,7 +156,7 @@ footer a {
 .eclipse {
   height: 145%;
   width: 70em;
-  background-color: var(--primary-optional-color);
+  background-color: var(--primary-color);
   clip-path: ellipse(50% 50%);
   rotate: 16.58deg;
   top: 0;

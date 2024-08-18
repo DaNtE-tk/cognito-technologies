@@ -3,9 +3,21 @@ import PageTitle from "../Components/PageTitle";
 import Section from "../Components/Section";
 import HrScroller from "../Components/HrScroller";
 import Card from "../Components/Card";
-import Item from "../Components/Item";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Home = () => {
+    const [userEmail, setUserEmail] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const yourEmail = 'mail@cognitotechnologies.com'; 
+
+        const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(yourEmail)}&body=${encodeURIComponent(`Subscription request from : ${userEmail}`)}`;
+
+        window.open(mailtoLink, '_blank');
+    };
     return (
         <>
             <PageTitle title={"Home"} />
@@ -17,7 +29,7 @@ const Home = () => {
                                 fontSize: "5vw",
                                 lineHeight: "1.3",
                                 fontFamily: "Sansation",
-                                color : "var(--primary-color) !important"
+                                color: "var(--primary-color) !important"
                             }}
                         >Innovating<br />
                             Tomorrow, Today
@@ -39,11 +51,11 @@ const Home = () => {
                             fontSize: "1.5vw",
                         }}>Cognito Technologies was established in April 2024 by two experienced IT veterans, bringing a wealth of knowledge and expertise to the startup.
 
-                        The company specializes in the development of socio-technical products, integrating advanced technologies to create solutions that enhance social and technical interactions.
-                        
-                        Cognito Technologies is dedicated to leveraging the latest advancements in technology, ensuring that their products are innovative and at the forefront of the industry.
-                        
-                        With a strong foundation and a clear focus, Cognito Technologies is poised for rapid growth and continuous innovation in the socio-technical domain.</p>
+                            The company specializes in the development of socio-technical products, integrating advanced technologies to create solutions that enhance social and technical interactions.
+
+                            Cognito Technologies is dedicated to leveraging the latest advancements in technology, ensuring that their products are innovative and at the forefront of the industry.
+
+                            With a strong foundation and a clear focus, Cognito Technologies is poised for rapid growth and continuous innovation in the socio-technical domain.</p>
                     </div>
                 </div>
             </Section>
@@ -77,34 +89,14 @@ const Home = () => {
                         desc={"Elevate your business with our cloud services. We offer scalable solutions for migration, management, and optimization, ensuring secure and efficient operations."}
                     />
                 </HrScroller>
-                <div className="w-100 d-flex"><a className="mx-auto" href="/whatwedo"><Button variant="dark">Explore Our Services <i className="fa-solid fa-angle-right"></i></Button></a></div>
-            </Section>
-            <Section header={"Featured Products"} ID={"products"}>
-                <div className="d-flex justify-content-center w-100 flex-wrap">
-                    <Item
-                        img={"/Products/mindcare.jpg"}
-                        alt={"iot"}
-                        header={"MindCare"}
-                        desc={" IoT-powered dementia care system. Monitors patients, detects falls, and alerts caregivers instantly. Provides 24/7 protection, enhancing patient safety and caregiver peace of mind through advanced technology."} />
-                    <Item
-                        img={"/Products/mindease.jpg"}
-                        alt={"ai"}
-                        header={"MindEase"}
-                        desc={"An AI-powered mental health platform offering personalized therapy, progress tracking, and therapist integration. Supports self-care and professional guidance with evidence-based tools in a secure, user-friendly environment."} />
-                    <Item
-                        img={"/Products/smap.jpg"}
-                        alt={"software"}
-                        header={"SMAP"}
-                        desc={" Automated social media management tool. Schedules posts, tracks engagement, and optimizes content across platforms. Helps businesses and influencers save time, grow audiences, and maintain consistent online presence efficiently."} />
-                </div>
-                <div className="w-100 d-flex"><a className="mx-auto" href="/products"><Button variant="dark">View All Products <i className="fa-solid fa-angle-right"></i></Button></a></div>
+                <div className="w-100 d-flex"><Link className="mx-auto" to="/whatwedo"><Button variant="dark">Explore Our Services <i className="fa-solid fa-angle-right"></i></Button></Link></div>
             </Section>
             <Section header={"Keep yourself Updated"} ID={"newsletter"}>
                 <div className="d-flex justify-content-around align-items-center position-relative flex-wrap overflow-hidden h-auto w-100 pb-5">
                     <div className="eclipse position-absolute"></div>
                     <div className="header-content d-flex flex-column justify-content-center"
                         style={{
-                            height: "540px"
+                            height: "400px"
                         }}>
                         <h2
                             style={{
@@ -118,7 +110,7 @@ const Home = () => {
                         }}>lorem ipsum dolor sit amet, consectetur</p>
                     </div>
                     <div className="form">
-                        <form >
+                        <form onSubmit={handleSubmit}>
                             <label for="emailid" style={{
                                 fontFamily: "Sansation", fontSize: "20px"
                             }}>Enter your email address</label><br />
@@ -130,10 +122,11 @@ const Home = () => {
                                     fontSize: "24px",
                                     borderRadius: "10px",
                                     fontFamily: "Sansation"
-                                }} id="emailid" type="email" placeholder="example@example.com" className="p-2" /> <br /><br />
+                                }} id="emailid" type="email" placeholder="example@example.com" className="p-2" value={userEmail} onChange={e => setUserEmail(e.target.value)} /> <br /><br />
 
                             <Button style={{
-                                fontSize: "1.2rem"
+                                fontSize: "1.2rem",
+                                border : "1px solid white"
                             }} type="submit" variant="dark">Subscribe <i className="fa-solid fa-envelope"></i></Button>
                         </form>
                     </div>
