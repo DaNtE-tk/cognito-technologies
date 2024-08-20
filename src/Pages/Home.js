@@ -107,7 +107,7 @@ const Home = () => {
                             color: "var(--primary-color) !important",
                             fontSize : "1.5rem",
                             opacity: 0.5
-                        }}>lorem ipsum dolor sit amet, consectetur</p>
+                        }}>Keep Yourself Updated By Joining Our Newsletter</p>
                     </div>
                     <div className="form">
                         <form onSubmit={handleSubmit}>
