@@ -93,19 +93,19 @@ const Home = () => {
             </Section>
             <Section header={"Keep yourself Updated"} ID={"newsletter"}>
                 <div className="d-flex justify-content-around align-items-center position-relative flex-wrap overflow-hidden h-auto w-100 pb-5">
-                    <div className="eclipse position-absolute"></div>
                     <div className="header-content d-flex flex-column justify-content-center"
                         style={{
                             height: "400px"
                         }}>
-                        <h2
+                        <h2 className="m-0"
                             style={{
-                                fontSize: "3.1rem",
-                                color: "var(--passive-color) !important",
-                                textAlign: "left !important"
+                                fontSize: "4.1rem",
+                                color: "var(--primary-color) !important",
+                                textAlign: "center !important"
                             }}>Join our Newsletter</h2>
-                        <p style={{
-                            color: "var(--passive-color) !important",
+                        <p className="m-0 text-center" style={{
+                            color: "var(--primary-color) !important",
+                            fontSize : "1.5rem",
                             opacity: 0.5
                         }}>lorem ipsum dolor sit amet, consectetur</p>
                     </div>
