@@ -23,33 +23,62 @@ const WhatWeDo = () => {
         </Section>
         <Section ID={"software-service"} header={"Custom Software Development"}>
             <Description img={"/WhatWeDo/software.png"} lists={[
-                { "icon": "fa-solid fa-clipboard", "header": "Description", "description": "We specialize in creating tailored software solutions that meet your unique business needs. From conceptualization to deployment, our expert developers ensure that your custom software is robust, scalable, and aligned with your goals, delivering seamless user experiences and operational efficiency." },
-                { "icon": "fa-solid fa-hands-holding", "header": "Benefits", "description": "Custom software development delivers a solution tailored to your business needs, enhancing efficiency and scalability. It offers unique features, better security, and integrates seamlessly with existing systems, often proving cost-effective over time despite higher initial costs." },
-                { "icon": "fa-solid fa-pen-to-square", "header": "Examples", "description": "SMAP (Social Media Automation Platform) streamlines social media management by automating posts, tracking engagement, and optimizing content across platforms. Ideal for businesses and influencers, it helps you save time, grow your audience, and maintain a consistent online presence effortlessly." },
+                { "icon": "fa-solid fa-clipboard", "header": "Overview", "description": "Cognito Technologies specializes in custom software development, creating tailored solutions that align with clients' unique needs across various industries. Our team of experts leverages cutting-edge technologies to build scalable, secure, and user-friendly applications that solve complex challenges." },
+                { "icon": "fa-solid fa-hands-holding", "header": "Benefits", "description": <ul>
+                    <li>Tailored Solutions: Custom-built software that fits specific business requirements.</li>
+                    <li>Scalability: Designed to grow with your business, adapting to increasing demands.</li>
+                    <li>Efficiency: Streamlines operations by automating processes and integrating seamlessly with existing systems.</li>
+                </ul>},
+                { "icon": "fa-solid fa-pen-to-square", "header": "Examples", "description": <ul>
+                    <li>Healthcare Applications: Custom platforms for patient management and IoMT integration.</li>
+                    <li>Business Automation: Tailored software to enhance productivity and streamline workflows across different sectors.</li>
+                </ul>},
             ]} />
         </Section>
         
         <Section ID={"ai-service"} header={"AI and Machine Learning Solutions"}>
             <Description imgrev={"reverse"} img={"/WhatWeDo/ai.png"} lists={[
-                { "icon": "fa-solid fa-clipboard", "header": "Overview", "description": "Unlock the power of AI with our advanced machine learning solutions. We help businesses automate processes, gain predictive insights, and enhance decision-making. Our AI services are designed to integrate smoothly into your existing systems, driving innovation and competitive advantage." },
-                { "icon": "fa-solid fa-hands-holding", "header": "User Cases", "description": "Machine learning can forecast equipment failures, personalize customer recommendations, detect fraud, predict sales trends, automate customer support, optimize marketing strategies, assist in healthcare diagnostics, streamline supply chains, support financial analysis, and enhance HR recruitment." },
-                { "icon": "fa-solid fa-pen-to-square", "header": "Examples", "description": "MindEase is an AI-powered platform that boosts mental well-being with personalized therapy, real-time progress tracking, and seamless therapist integration. It provides self-care and professional support through empathetic, evidence-based tools and secure, user-friendly features. Improve your mental health today with MindEase." },
+                { "icon": "fa-solid fa-clipboard", "header": "Overview", "description": "Cognito Technologies' AI and Machine Learning solutions are designed to enhance the functionality and effectiveness of socio-technical products. By integrating AI/ML algorithms, Cognito enables intelligent decision-making, personalized user experiences, and predictive analytics across its product offerings." },
+                { "icon": "fa-solid fa-hands-holding", "header": "Benefits", "description": <ul>
+                    <li>Personalization: AI-driven insights tailor user experiences, improving engagement and outcomes.</li>
+                    <li>Efficiency: Automated processes reduce manual effort and enhance productivity.</li>
+                    <li>Predictive Analytics: AI models predict trends and behaviors, allowing for proactive decision-making.</li>
+                </ul>},
+                { "icon": "fa-solid fa-pen-to-square", "header": "Examples", "description": <ul>
+                    <li>MindEase: Utilizes AI to offer personalized mental health recommendations.</li>
+                    <li>MindCare: Employs machine learning to detect movement patterns and prevent falls in patients with dementia.</li>
+                </ul> },
             ]} />
         </Section>
         
         <Section ID={"iot-service"} header={"IoT Integration"}>
             <Description img={"/WhatWeDo/iot.png"} lists={[
-                { "icon": "fa-solid fa-clipboard", "header": "Explanation", "description": "Connect your devices and streamline operations with our IoT integration services. We provide end-to-end solutions that enable real-time data collection, analysis, and automation, helping you transform your business with smart, connected systems that enhance efficiency and performance." },
-                { "icon": "fa-solid fa-hands-holding", "header": "Industry Applications", "description": "IoT integration services enhance industries with applications such as remote patient monitoring in healthcare, predictive maintenance in manufacturing, smart inventory management in retail, precision farming in agriculture, fleet tracking in logistics, smart infrastructure in cities, and energy management systems in the energy sector." },
-                { "icon": "fa-solid fa-ranking-star", "header": "Examples", "description": "MindCare provides cutting-edge solutions for dementia care, focusing on patient safety and caregiver reassurance. Our IoT-enabled devices track patient movements, detect falls, and send instant alerts to caregivers. Featuring advanced sensors and seamless connectivity, MindCare delivers continuous protection and support for individuals living with dementia." },
+                { "icon": "fa-solid fa-clipboard", "header": "Overview", "description": "Cognito Technologies' IoT solution, MindCare, is designed specifically for fall prevention and movement tracking in dementia and Alzheimer’s patients. Utilizing advanced IoT sensors, MindCare monitors patients’ movements, providing real-time alerts and data to caregivers for prompt intervention." },
+                { "icon": "fa-solid fa-hands-holding", "header": "Benefits", "description": <ul>
+                    <li>Fall Prevention: Early detection of falls reduces the risk of injury.</li>
+                    <li>Movement Tracking: Continuous monitoring helps in understanding patient behavior and mobility patterns.</li>
+                    <li>Caregiver Support: Real-time alerts and data enhance response times and care quality.</li>
+                </ul>},
+                { "icon": "fa-solid fa-ranking-star", "header": "Examples", "description": <ul>
+                    <li>In-Home Monitoring: MindCare provides caregivers with continuous insights into patient movement at home.</li>
+                    <li>Healthcare Facilities: Hospitals and care homes use MindCare to ensure patient safety and well-being.</li>
+                </ul> },
             ]} />
         </Section>
         
         <Section ID={"cloud-service"} header={"Cloud Services"}>
             <Description imgrev={"reverse"} rev={"reverse"} img={"/WhatWeDo/cloud.png"} lists={[
-                { "icon": "fa-solid fa-users-viewfinder", "header": "Definition", "description": "Leverage the scalability and flexibility of the cloud with our comprehensive cloud services. We offer cloud migration, management, and optimization solutions, ensuring your business can operate securely and efficiently from anywhere, with access to the latest technologies and resources." },
-                { "icon": "fa-solid fa-hands-holding", "header": "Benefits", "description": "Cloud services offer scalability, flexibility, cost efficiency, enhanced security, automatic updates, disaster recovery, and improved collaboration by providing adaptable, remote access to the latest technologies and resources." },
-                { "icon": "fa-solid fa-cloud", "header": "Deployment Options", "description": "Cloud services can be deployed through public clouds (e.g., AWS), private clouds (e.g., VMware Cloud), hybrid clouds (e.g., Azure Hybrid), community clouds (e.g., GovCloud), and multi-clouds (e.g., AWS and Google Cloud)." },
+                { "icon": "fa-solid fa-users-viewfinder", "header": "Overview", "description": "Cognito Technologies offers robust cloud-based solutions for all its socio-technical products, providing Software as a Service (SaaS) to customers. By leveraging the power of the cloud, Cognito ensures seamless access, scalability, and security for its mental health, IoMT, and social media automation tools." },
+                { "icon": "fa-solid fa-hands-holding", "header": "Benefits", "description": <ul>
+                    <li>Scalability: Easily adjust resources based on demand, ensuring optimal performance.</li>
+                    <li>Accessibility: Access tools anytime, anywhere, with just an internet connection.</li>
+                    <li>Security: Advanced cloud security measures protect sensitive data.</li>
+                </ul> },
+                { "icon": "fa-solid fa-cloud", "header": "Examples", "description":<ul>
+                    <li>MindEase: Provides real-time mental health support.</li>
+                    <li>MindCare: Facilitates remote patient monitoring via IoMT.</li>
+                    <li>Social Media Automation: Streamlines digital marketing efforts through cloud-hosted platforms.</li>
+                </ul>  },
             ]} />
         </Section>
 
