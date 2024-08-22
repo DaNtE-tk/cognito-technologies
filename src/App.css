@@ -153,17 +153,6 @@ footer a {
   width: 390px;
 }
 
-.eclipse {
-  height: 145%;
-  width: 70em;
-  background-color: var(--primary-color);
-  clip-path: ellipse(50% 50%);
-  rotate: 16.58deg;
-  top: 0;
-  left: -100px;
-  z-index: -1;
-}
-
 #newsletter .form {
   text-shadow:
     -1px -1px 0 var(--passive-color),
