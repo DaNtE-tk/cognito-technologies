@@ -3,7 +3,7 @@ import Section from "../Components/Section";
 
 const Policy = () => {
     return (<> 
-    <PageTitle title={"Cognito Solutions | Privacy & Policy"}/>
+    <PageTitle title={"Privacy & Policy"}/>
     <Section header={"Privacy & Policy"} ID={"pvcplc"}>
     <p className="p-5" style={{
         fontSize : "30px"

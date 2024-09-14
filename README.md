@@ -9,3 +9,12 @@ For example:
 Section content...
 
 `</Section>`
+
+
+# Changes made:
+
+* Page title of the terms page has been corrected.
+* Removed Aditya Sir's picture from Who we are page.
+* Removed map from contact page.
+* Contact form will automatically open email and from there you can send email.
+* Cognito Solution, this title has been corrected to Cognito Technologies

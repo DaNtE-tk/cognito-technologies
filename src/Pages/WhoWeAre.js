@@ -10,7 +10,6 @@ const WhoWeAre = () => {
             <div className="d-flex flex-row-reverse justify-content-center align-items-center gap-2 px-5">
                 <div className="image-content d-flex justify-content-center align-items-center flex-shrink-1 w-50 position-relative">
                     <img className="w-75" src="/logo.png" alt="Logo" />
-                    <Polaroid img={"/WhoWeAre/founder1.jpg"} alt={"founders"} position={"Advisor"} name={"Mr. Aditya"} spcpos={"absolute"} />
                     <Polaroid img={"/WhoWeAre/founder2.png"} alt={"founders"} position={"Founder"} name={"Mr. Prasun"} spcpos={"absolute"} />
                 </div>
                 <div className="text-content w-50 flex-shrink-1">

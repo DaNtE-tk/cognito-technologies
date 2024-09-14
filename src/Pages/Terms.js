@@ -1,7 +1,10 @@
 import Section from "../Components/Section";
+import PageTitle from "../Components/PageTitle";
 
 const Terms = () => {
-    return (<Section header={"Terms & Service"} ID={"trmsrv"}><p className="px-5" style={{
+    return (<>
+    <PageTitle title={"Terms & Service"}/>
+    <Section header={"Terms & Service"} ID={"trmsrv"}><p className="px-5" style={{
         fontSize : "30px"
     }}>
         <b>Introduction:</b> By accessing and using Cognito Technologies' website and services, you agree to comply with these Terms of Service.</p>
@@ -22,7 +25,7 @@ const Terms = () => {
             fontSize : "30px"
         }}><b>Changes to Terms:</b> We reserve the right to update these Terms of Service at any time. Your continued use of our services constitutes acceptance of the revised terms.
         Contact Us: For any questions regarding these terms, please contact us at mail@cognitotechnologies.com.
-    </p></Section>);
+    </p></Section></>);
 }
 
 export default Terms;
