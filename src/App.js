@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import Home from './Pages/Home';
 import PageNotFound from './Pages/PageNotFound'
 import WhoWeAre from './Pages/WhoWeAre';
@@ -36,7 +36,7 @@ function App() {
             </Routes>
           </Layout>
         </main>
-      </HashRouter>
+      </HashR>
     </div>
   );
 }

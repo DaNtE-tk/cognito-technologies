@@ -3,12 +3,12 @@ import PageTitle from "../Components/PageTitle";
 import Section from "../Components/Section";
 import HrScroller from "../Components/HrScroller";
 import Card from "../Components/Card";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Home = () => {
     const [userEmail, setUserEmail] = useState('');
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -18,6 +18,7 @@ const Home = () => {
 
         window.open(mailtoLink, '_blank');
     };
+
     return (
         <>
             <PageTitle title={"Home"} />
