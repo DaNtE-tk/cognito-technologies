@@ -36,7 +36,7 @@ function App() {
             </Routes>
           </Layout>
         </main>
-      </HashR>
+      </HashRouter>
     </div>
   );
 }
